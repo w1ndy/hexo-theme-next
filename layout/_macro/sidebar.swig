@@ -34,6 +34,9 @@
            {% else %}
               <p class="site-description motion-element" itemprop="description">{{ theme.description }}</p>
           {% endif %}
+          <p class="site-author-location">
+            Zhejiang University
+          </p>
         </div>
         <nav class="site-state motion-element">
 
@@ -70,15 +73,6 @@
 
         </nav>
 
-        {% if theme.rss %}
-          <div class="feed-link motion-element">
-            <a href="{{ url_for(theme.rss) }}" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        {% endif %}
-
         <div class="links-of-author motion-element">
           {% if theme.social %}
             {% for name, link in theme.social %}
@@ -87,10 +81,15 @@
                   {% if theme.social_icons.enable %}
                     <i class="fa fa-fw fa-{{ theme.social_icons[name] | default('globe') | lower }}"></i>
                   {% endif %}
-                  {{ name }}
+                  <!--{{ name }}-->
                 </a>
               </span>
             {% endfor %}
+              <span class="links-of-author-item">
+                <a href="{{ url_for(theme.rss) }}" rel="alternate" title="{{ rss }}">
+                  <i class="fa fa-fw fa-rss"></i>
+                </a>
+              </span>
           {% endif %}
         </div>
 
