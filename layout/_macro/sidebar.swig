@@ -29,11 +29,7 @@
                src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"
                alt="{{ theme.author }}" />
           <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
-           {% if theme.seo %}
-              <p class="site-description motion-element" itemprop="description">{{ theme.signature }}</p>
-           {% else %}
-              <p class="site-description motion-element" itemprop="description">{{ theme.description }}</p>
-          {% endif %}
+          <p class="site-description motion-element" itemprop="description">Data Mining, Visualization<br>Computer Science Ph.D. Student</p>
           <p class="site-author-location">
             Zhejiang University
           </p>

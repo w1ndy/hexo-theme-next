@@ -49,6 +49,7 @@ menu:
   #about: /about/
   archives: /archives/
   tags: /tags/
+  gallery: /gallery/
   resume: /resume/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
@@ -71,6 +72,7 @@ menu_icons:
   sitemap: sitemap
   commonweal: heartbeat
   resume: newspaper-o
+  gallery: picture-o
 
 
 
